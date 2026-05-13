@@ -6,6 +6,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Converts a 2D primitive int array into a {@code List<List<Integer>>}.
+ *
+ * <p>Example:<br>
+ * Input: {{1, 2}, {3, 4}, {5, 6}}<br>
+ * Output: [[1, 2], [3, 4], [5, 6]]
+ */
 public class K_IntArray2DToListConverter {
   @Test
   @Disabled
