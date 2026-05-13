@@ -37,6 +37,7 @@ public class MediumNumbersProblemSolution {
     return input.stream().distinct().toList();
   }
 
+  // Alternative to Easy: uses a primitive IntStream to avoid boxing overhead.
   public static long sumOfNumbers(List<Integer> input) {
     return input.stream().mapToInt(Integer::intValue).sum();
   }
@@ -90,6 +91,8 @@ public class MediumNumbersProblemSolution {
     return input.stream().mapToInt(Integer::intValue).average().orElse(0);
   }
 
+  // Alternative to Easy: keys are range-starts (0, 10, 20…) instead of raw quotients (0, 1, 2…).
+  // Compare both outputs to understand the difference in grouping strategies.
   public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
     return randomIntegers.stream().collect(Collectors.groupingBy(e -> (e / 10) * 10));
   }

@@ -10,7 +10,7 @@ class I_SecondHighestWordTest {
   @Disabled()
   public void find2ndHighestWord() {
     final String input = "I am interested123455 to grow in my organization";
-    String mySolution = StringProblemsSolution.find2ndLargestWordInTheString(input);
+    String mySolution = MediumStringProblemsSolution.find2ndLargestWordInTheString(input);
 
     final String yourSolution = "";
 

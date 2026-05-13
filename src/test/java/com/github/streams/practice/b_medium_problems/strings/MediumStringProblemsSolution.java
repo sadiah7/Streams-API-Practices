@@ -4,7 +4,18 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class StringProblemsSolution {
+/**
+ * Reference solutions for medium-tier string problems.
+ *
+ * <p>The 12 methods below are identical to
+ * {@link com.github.streams.practice.a_easy_problems.strings.StringProblemsSolution} and are
+ * retained here so medium exercises are self-contained. One method is unique to this class:
+ * <ul>
+ *   <li>{@code frequentVowelPlusConstant} — finds the max vowel frequency + max consonant
+ *       frequency and returns their sum
+ * </ul>
+ */
+public class MediumStringProblemsSolution {
 
   public static List<String> sortListBasedOn2ndCharacter(List<String> input) {
     return input.stream()
@@ -80,7 +91,8 @@ public class StringProblemsSolution {
   public static String convertListOfCharactersToString(Collection<Character> listOfCharacters) {
     return listOfCharacters.stream().map(Object::toString).reduce("", String::concat);
   }
-  public static int frequentVowelPlusConstant(String s){
+
+  public static int frequentVowelPlusConstant(String s) {
     final var vowels = Set.of('a', 'e', 'i', 'o', 'u');
     final var vowelsValue = s.chars()
             .mapToObj(e -> Character.valueOf((char) e))
@@ -94,7 +106,7 @@ public class StringProblemsSolution {
 
     final var constValue = s.chars()
             .mapToObj(e -> Character.valueOf((char) e))
-            .filter(e->!vowels.contains(e))
+            .filter(e -> !vowels.contains(e))
             .collect(Collectors.toMap(Function.identity(), c -> 1, Integer::sum))
             .entrySet()
             .stream()

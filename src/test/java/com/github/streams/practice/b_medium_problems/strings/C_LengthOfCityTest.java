@@ -25,7 +25,7 @@ class C_LengthOfCityTest {
   @Disabled
   void testCalculateLengthOfEachCityTest() {
     final var cities = List.of("Mumbai", "Munnar", "Chennai", "Hyderabad");
-    final var mySolution = StringProblemsSolution.findLengthOfEachCityAlongWithSize(cities);
+    final var mySolution = MediumStringProblemsSolution.findLengthOfEachCityAlongWithSize(cities);
 
     final Map<String, Integer> yourSolution = new HashMap<>();
     Assertions.assertEquals(yourSolution, mySolution);

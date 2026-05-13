@@ -14,7 +14,7 @@ class J_SortListBasedOn2ndCharacterTest {
    * method.
    *
    * @author @ZahidKhan
-   * @see StringProblemsSolution#sortListBasedOn2ndCharacter(List)
+   * @see MediumStringProblemsSolution#sortListBasedOn2ndCharacter(List)
    */
   @Test
   @Disabled
@@ -46,7 +46,7 @@ class J_SortListBasedOn2ndCharacterTest {
             fakePersons.name(),
             fakePersons.name());
 
-    List<String> mySolution = StringProblemsSolution.sortListBasedOn2ndCharacter(input);
+    List<String> mySolution = MediumStringProblemsSolution.sortListBasedOn2ndCharacter(input);
     List<String> yourSolution = Collections.emptyList();
 
     Assertions.assertEquals(mySolution, yourSolution);

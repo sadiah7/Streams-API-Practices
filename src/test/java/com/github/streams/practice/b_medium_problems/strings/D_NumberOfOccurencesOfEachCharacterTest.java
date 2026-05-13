@@ -11,7 +11,7 @@ class D_NumberOfOccurencesOfEachCharacterTest {
   @Disabled("Remove This Once you Complete The Exercise")
   void numberOfOccurencesOfEachCharacter() {
     final String input = "the quick brown fox jumps right over the little lazy dog little";
-    final var mySolution = StringProblemsSolution.findOccurenceOfCharacter(input);
+    final var mySolution = MediumStringProblemsSolution.findOccurenceOfCharacter(input);
     final Map<Character, Long> yourSolution = null;
 
     assertEquals(mySolution, yourSolution);

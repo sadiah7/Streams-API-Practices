@@ -11,7 +11,7 @@ class E_NumberOfOccurencesOfEachWordTest {
   @Disabled
   public void numberOfOccurencesOfEachWord() {
     final var input = "the quick brown fox jumps right over the little lazy dog little";
-    final Map<String, Long> mySolution = StringProblemsSolution.numberOfOccurenceOfEachWord(input);
+    final Map<String, Long> mySolution = MediumStringProblemsSolution.numberOfOccurenceOfEachWord(input);
 
     Map<String, Long> yourSolution = Map.of();
     assertEquals(mySolution, yourSolution);

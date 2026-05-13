@@ -13,7 +13,7 @@ public class L_ConvertListOfCharactersToString {
         List.of(
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
             'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-    var mySolution = StringProblemsSolution.convertListOfCharactersToString(listOfCharacters);
+    var mySolution = MediumStringProblemsSolution.convertListOfCharactersToString(listOfCharacters);
     var yourSolution = "";
     Assertions.assertEquals(mySolution, yourSolution);
   }

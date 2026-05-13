@@ -10,7 +10,7 @@ class K_FindDuplicateStrings {
   @Disabled
   void findDuplicateStrings() {
     final var input = List.of("Hellow", "World", "How", "are", "you", "How", "are", "you");
-    final var mySolution = StringProblemsSolution.findDuplicateStrings(input);
+    final var mySolution = MediumStringProblemsSolution.findDuplicateStrings(input);
     final var yourSolution = List.of();
 
     Assertions.assertEquals(mySolution, yourSolution);

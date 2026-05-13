@@ -22,7 +22,7 @@ class H_ReverseStringWithSpecialCharactersTest {
   @Disabled
   void testReverseStringWithSpecialCharactersTest() {
     var input = "Hello world! This is a test. 😅";
-    var mySolution = StringProblemsSolution.reverseStringWithSpecialCharacters(input);
+    var mySolution = MediumStringProblemsSolution.reverseStringWithSpecialCharacters(input);
 
     var yourSolution = "";
 

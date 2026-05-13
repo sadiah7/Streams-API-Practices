@@ -14,7 +14,7 @@ class F_ConcatenationOfStrings {
   @Disabled
   void testConcatenationOfStrings() {
     List<String> input = List.of("Hellow", "World", "Hello", "World");
-    final var mySolution = StringProblemsSolution.concatenateStrings(input);
+    final var mySolution = MediumStringProblemsSolution.concatenateStrings(input);
     final var yourSolution = "";
 
     Assertions.assertEquals(mySolution, yourSolution);

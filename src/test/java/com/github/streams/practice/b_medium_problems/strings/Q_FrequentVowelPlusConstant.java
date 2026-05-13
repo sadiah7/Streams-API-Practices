@@ -61,7 +61,7 @@ class Q_FrequentVowelPlusConstant {
     @Disabled
     void freqVowelsPlusConstant() {
         final var input = "successes";
-        final var mySolution = StringProblemsSolution.frequentVowelPlusConstant(input);
+        final var mySolution = MediumStringProblemsSolution.frequentVowelPlusConstant(input);
         final var yourSolution = -1;
 
         Assertions.assertEquals(mySolution, yourSolution);

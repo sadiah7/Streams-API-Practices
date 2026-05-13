@@ -38,7 +38,7 @@ class A_MatchesNoOfVowelsTest {
     var input = "The quick brown fox jumps right over the little lazy dog.";
     final var length = 2;
 
-    var mySolution = StringProblemsSolution.getMatchesVowels(input, length);
+    final var mySolution = MediumStringProblemsSolution.getMatchesVowels(input, length);
     var yourSolution = List.of();
     Assertions.assertEquals(mySolution, yourSolution);
   }

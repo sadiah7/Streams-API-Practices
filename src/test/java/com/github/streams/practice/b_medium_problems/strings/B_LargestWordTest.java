@@ -16,13 +16,13 @@ class B_LargestWordTest {
    * </pre>
    *
    * @author ZahidKhan
-   * @see StringProblemsSolution#findLargestWordInTheString(String)
+   * @see MediumStringProblemsSolution#findLargestWordInTheString(String)
    */
   @Test
   @Disabled()
   public void findLargestWordInTheString() {
     final String input = "I am interested123455 to grow in my organization";
-    final String mySolution = StringProblemsSolution.findLargestWordInTheString(input);
+    final String mySolution = MediumStringProblemsSolution.findLargestWordInTheString(input);
 
     String yourSolution = null;
 
