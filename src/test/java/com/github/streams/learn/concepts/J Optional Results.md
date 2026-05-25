@@ -1,0 +1,37 @@
+# Optional Results
+
+Some terminal operations may not find a value. In that case, streams often return `Optional` instead of `null`.
+
+Common examples:
+- `findFirst()`
+- `findAny()`
+- `max()`
+- `min()`
+
+Example
+```java
+var firstEven = List.of(1, 3, 5, 8, 10).stream()
+        .filter(number -> number % 2 == 0)
+        .findFirst();
+
+System.out.println(firstEven.orElse(0));
+```
+
+Output
+```java
+8
+```
+
+Using `Optional` makes missing values explicit and safer to handle.
+
+---
+<table>
+<tr>
+<td style="text-align: left;">
+<a href="./I%20Single%20Use%20Streams.md">Previous: I Single Use Streams.md</a>
+</td>
+<td style="text-align: right;">
+<a href="./K%20When%20NOT%20To%20Use%20Streams%20API%3F.md">Next: K When NOT To Use Streams API?.md</a>
+</td>
+</tr>
+</table>
